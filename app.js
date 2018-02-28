@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 
 app.get("/", function (req,res) {
     res.sendFile(path.join(__dirname, "index.html"))
+    console.log("Hello world");
 });
 
 app.get("/api/cars", function (req,res) {
